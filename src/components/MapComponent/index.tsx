@@ -7,9 +7,7 @@ import Polygon, { IPolygon } from "../Polygon";
 
 function MapComponent() {
   const fetcher = (url: RequestInfo | URL, init?: RequestInit) =>
-    fetch(url, { ...init, referrerPolicy: "unsafe-url" }).then((res) =>
-      res.json()
-    );
+    fetch(url, init).then((res) => res.json());
   const { data, error, isLoading } = useSWR(
     "http://agro.energomera.ru:3060/api/field?lastChangeDate=2022-01-01T10:00:00.000&skip=0&take=100",
     fetcher
