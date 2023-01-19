@@ -1,0 +1,8 @@
+.marker{
+    margin: auto;
+    background-color: green;
+    font-size: medium;
+    color: white;
+    border: 1px solid black;
+    padding: 4px;
+}

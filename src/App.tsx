@@ -1,9 +1,11 @@
+import MapComponent from "./components/MapComponent";
+
 function App() {
   return (
-    <div>
-      Hola, amigo!
+    <div className="App">
+      <MapComponent />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
